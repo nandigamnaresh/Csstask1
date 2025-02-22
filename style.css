@@ -1,0 +1,61 @@
+a{
+    color: blue;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: green;
+}
+h1{
+    font-family: Arial;
+    text-shadow: 1px 1px 2px black;
+}
+p{
+   font-size: 1.2rem; 
+   line-height: 1.6;
+   text-align: justify;
+}
+.card{
+    border:1px solid gray;
+    padding:20px;
+    margin:10px;
+    max-width:300px;
+}
+nav{
+    display:flex;   
+        justify-content:space-between;
+        align-items:center;
+        height: 100vh;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+
+@media screen and (max-width:600px){
+    .gallery{
+        grid-template-columns: 1fr; 
+    }
+    
+}
+#but1{
+    background-color: blue;
+    color: white;
+    transition: 0.3s;
+
+}
+#but1:hover{
+    background-color:darkblue;
+}
+
+#but2{
+    width: 150px;
+    height: 50px;
+   
+}
+#but2:hover{
+  transform: scale(1.2); 
+}
